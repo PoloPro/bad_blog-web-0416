@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
   def index
     @posts = Post.all
+    fresh_when last_modified: @posts.maximum(:updated_at), public: true
   end
 
   def show
