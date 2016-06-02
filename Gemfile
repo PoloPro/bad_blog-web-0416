@@ -46,3 +46,6 @@ group :development do
 end
 
 gem 'faker'
+
+gem 'rack-mini-profiler'
+gem "bullet", :group => "development"
